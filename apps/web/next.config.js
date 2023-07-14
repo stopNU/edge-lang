@@ -1,8 +1,6 @@
-module.exports = {
-  i18n: {
-    locales: ["en", "de"],
-    defaultLocale: "en",
-  },
+const nextTranslate = require("next-translate-plugin");
+
+module.exports = nextTranslate({
   reactStrictMode: true,
   transpilePackages: ["ui"],
-};
+});

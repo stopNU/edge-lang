@@ -1,7 +1,7 @@
-import { GetServerSidePropsContext } from "next";
-import useTranslation from "next-translate/useTranslation";
+//import { GetServerSidePropsContext } from "next";
+//import useTranslation from "next-translate/useTranslation";
 import getT from "next-translate/getT";
-import Link from "next/link";
+//import Link from "next/link";
 
 export const runtime = "experimental-edge";
 
@@ -23,6 +23,10 @@ export default function About({ locale, title, description }) {
 export async function getServerSideProps({ locale }) {
   const t = await getT(locale, ["common", "home"]);
   return {
-    props: { locale, title: t("title"), description: t("home:description") },
+    props: {
+      locale,
+      title: t("common: title"),
+      description: t("home:description"),
+    },
   };
 }

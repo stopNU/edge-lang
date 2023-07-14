@@ -8,10 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "nop": "npx @cloudflare/next-on-pages",
-    "extract": "formatjs extract",
-    "compile": "formatjs compile",
-    "extract-messages": "extract-react-intl-messages 'src/**/*.{ts,tsx}' --out-file 'build/messages.json'",
-    "asd": "extract-messages --locales=ja,en --output src/translations 'src/**/*.{ts,tsx}'"
+    "i18n:extract": "i18next 'src/**/*.{ts,tsx}' [-oc]"
   },
   "dependencies": {
     "accept-language-parser": "^1.5.0",
@@ -29,6 +26,7 @@
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "eslint-config-custom": "*",
+    "i18next-parser": "^8.2.0",
     "next-translate-plugin": "^2.4.4",
     "tsconfig": "*",
     "typescript": "^4.5.3",

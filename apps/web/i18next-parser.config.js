@@ -5,7 +5,7 @@ module.exports = {
   createOldCatalogs: true,
   // Save the \_old files
 
-  defaultNamespace: "translation",
+  defaultNamespace: "common",
   // Default namespace used in your i18next config
 
   defaultValue: "",
@@ -45,7 +45,7 @@ module.exports = {
   lineEnding: "auto",
   // Control the line ending. See options at https://github.com/ryanve/eol
 
-  locales: ["en", "fr"],
+  locales: ["en", "ca", "es"],
   // An array of the locales in your applications
 
   namespaceSeparator: ":",
